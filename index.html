@@ -1,17 +1,177 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>TheLDT's Github Pages</title>
-    <link rel="shortcut icon" href="images/image.ico">
-    <link rel="stylesheet" href="style.css">
+<html lang="en">
 
-  </head>
-  <body>
-    <div class="buttons">
-      <a href="https://theldt.github.io/JS-Trivia-Game" class="arrow"><span>Trivia Game</span></a>
-      <a href="https://theldt.github.io/MinesweeperJS" class="arrow"><span>Minesweeper</span></a>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giorgos Lydiotis</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="header" class="header">
+        <div class="header-content">
+            <h2 id="header-title" class="header-title">Giorgos Lydiotis</h2>
+            <div class="header-links">
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#footer">Links</a>
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round">🌛 🌞</div>
+                </label>
+            </div>
+        </div>
     </div>
-    <script type="module" src="padoru.js"></script>
-  </body>
+    <div class="side-dummy"></div>
+    <div class="side">
+        <div class="side-panel">
+            <img class="side-panel-image" src="https://cdn-icons-png.flaticon.com/512/456/456212.png">
+            <div class="side-panel-description">I am a junior backend developer, currently working for IBM as a
+                contractor in projects for the National Bank of Greece.</div>
+            <div class="side-panel-description">I am currently studying in University of West Attica in the Department
+                of Informatics and Computer Engineering.</div>
+            <div class="side-panel-description">In my free time, I create webpages, play video games and read books.
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="anchor-div">
+            <span id="experience" class="anchor-target"></span>
+        </div>
+        <h3 class="projects-title">Experience</h3>
+        <div class="projects">
+
+            <div class="experience">
+                <h4 class="exp-title">Junior Backend Developer</h4>
+                <div class="exp-clients">
+                    <img src="icons/ibm.svg" alt="IBM" title="IBM">
+                    <img src="icons/nbg.svg" alt="NBG" title="National Bank of Greece">
+                </div>
+                <div class="exp-description">
+                    Working on IBM's projects for the National Bank of Greece in the Card Department, including
+                    rewriting &
+                    updating old PL/1 programs, unit testing new programs & JCL flows, monitoring & troubleshooting
+                    production flows, and creation of emergency procedures.
+                </div>
+                <div class="exp-technologies">
+                    <img src="/icons/pli.svg" alt="PLI" title="PL/1">
+                    <img src="/icons/db2.svg" alt="db2sql" title="DB2">
+                </div>
+            </div>
+            <div class="experience">
+                <h4 class="exp-title">Freelance Application Developer</h4>
+                <div class="exp-clients">
+                    <img src="icons/fiverr.svg" alt="fiverr" title="Fiverr">
+                </div>
+                <div class="exp-description">
+                    As freelance developer on <span class="word-fiverr">Fiverr</span>, I created
+                    <span class="word-discord">Discord</span> Bots in Java using <a class="outlink" href=""
+                        target="_blank">JDA</a>. Some of the projects I was tasked with were: web-scraping shops for
+                    item
+                    prices, role playing games with a local database, a <a class="outlink"
+                        href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">pomodoro</a> timer for
+                    studying, team task tracker, general Discord server management.
+                </div>
+                <div class="exp-technologies">
+                    <img src="/icons/java.svg" alt="Java" title="Java">
+                    <img src="/icons/sqlite.svg" alt="sqlite" title="SQLite">
+                </div>
+            </div>
+        </div>
+        <div class="anchor-div">
+            <span id="projects" class="anchor-target"></span>
+        </div>
+        <h3 class="projects-title">Projects</h3>
+        <div class="projects">
+            <div class="project">
+                <h4 class="project-title">Netflix True Genres</h4>
+                <img class="project-image" src="icons/netflix.png" alt="Netflix True Genres">
+                <div class="project-description">
+                    <div class="project-d-text">
+                        A site that can help you select a <span class="word-netflix">Netflix</span> show or movie to
+                        watch, without having to rely on Netflix's algorithm. Instead, this site helps you navigate
+                        through specific genres and subgenres which are normally hidden to the regular user.
+                    </div>
+                </div>
+                <div class="project-d-details">
+                    <div class="project-links">
+                        <a href="https://theldt.github.io/NetflixTrueGenres/" class="project-link"
+                            target="_blank">Site</a>
+                        <a href="https://github.com/TheLDT/NetflixTrueGenres" class="project-link"
+                            target="_blank">Source Code</a>
+                    </div>
+                    <div class="project-technologies">
+                        <img src="icons/html5.svg" alt="html" title="HTML">
+                        <img src="icons/css3.svg" alt="css" title="CSS">
+                        <img src="icons/javascript.svg" alt="javascript" title="Javascript">
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <h4 class="project-title">MinesweeperJS</h4>
+                <img class="project-image" src="icons/Minesweeper.png" alt="Minesweeper">
+                <div class="project-description">
+                    <div class="project-d-text">
+                        A simple <a class="outlink" href="https://en.wikipedia.org/wiki/Minesweeper_(video_game)"
+                            target="_blank">Minesweeper</a> implementation
+                        with variable bombs
+                        and 2 different ways to place flags (helpful for when one is playing from a mobile device).
+                    </div>
+                </div>
+                <div class="project-d-details">
+                    <div class="project-links">
+                        <a href="https://theldt.github.io/MinesweeperJS/" class="project-link" target="_blank">Site</a>
+                        <a href="https://github.com/TheLDT/MinesweeperJS" class="project-link" target="_blank">Source
+                            Code</a>
+                    </div>
+                    <div class="project-technologies">
+                        <img src="icons/html5.svg" alt="html" title="HTML">
+                        <img src="icons/css3.svg" alt="css" title="CSS">
+                        <img src="icons/javascript.svg" alt="javascript" title="Javascript">
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <h4 class="project-title">HexacombJS</h4>
+                <img class="project-image" src="icons/Hexacomb.png" alt="Hexacomb">
+                <div class="project-description">
+                    <div class="project-d-text">
+                        A game inspired by <a class="outlink"
+                            href="https://www.nytimes.com/puzzles/spelling-bee" target="_blank">New York
+                            Time's Spelling Bee</a>, where you are given 7 random letters; a center, main letter and six
+                        other extra letters. You are tasked with making as many words as you can containing the center
+                        letter at least once, and having a total of at least 4 letters.
+                    </div>
+                </div>
+                <div class="project-d-details">
+                    <div class="project-links">
+                        <a href="https://theldt.github.io/HexacombJS/" class="project-link" target="_blank">Site</a>
+                        <a href="https://github.com/TheLDT/HexacombJS" class="project-link" target="_blank">Source
+                            Code</a>
+                    </div>
+                    <div class="project-technologies">
+                        <img src="icons/html5.svg" alt="html" title="HTML">
+                        <img src="icons/css3.svg" alt="css" title="CSS">
+                        <img src="icons/javascript.svg" alt="javascript" title="Javascript">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="footer">
+
+        <div class="footer-links">
+            <h2 class="footer-title">Useful Links</h2>
+            <img id="img-github" src="icons/github.svg" alt="github" title="Github">
+            <img id="img-linkedin" src="icons/linkedin.svg" alt="linkedin" title="LinkedIn">
+            <img id="img-fiverr" src="icons/fiverr.svg" alt="fiverr" title="Fiverr">
+            <img id="img-kofi" src="icons/kofi.svg" alt="kofi" title="Kofi">
+        </div>
+        <div class="footer-rights">2023 Giorgos Lydiotis</div>
+    </div>
+</body>
+
 </html>
