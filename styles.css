@@ -573,11 +573,19 @@ input:checked+.slider:before {
         width: 100%;
         border-bottom: var(--size-border) solid var(--color-light-text);
         border-right: none;
+        height: auto;
+        overflow: auto;
     }
 
     .side-panel {
         top: 0;
-        margin-inline: 1rem;
+        margin-inline: 5rem;
+        text-align: start;
+        padding-bottom: 1rem;
+    }
+
+    .side-panel-description {
+        margin-inline: 0 auto;
     }
 
     .content {
@@ -630,6 +638,10 @@ input:checked+.slider:before {
         bottom: .05rem;
         height: 1.8rem;
         width: 1.8rem;
+    }
+
+    .side-panel {
+        margin-inline: 1rem;
     }
 }
 
