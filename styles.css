@@ -595,10 +595,14 @@ input:checked+.slider:before {
     .projects {
         margin-inline: 0%;
     }
+
+    .footer-rights {
+        margin-block: 0;
+    }
 }
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
     .header {
         grid-template-columns: auto 1fr;
         height: 2.5rem;
@@ -643,6 +647,32 @@ input:checked+.slider:before {
     .side-panel {
         margin-inline: 1rem;
     }
+
+    .project-image {
+        justify-self: left;
+    }
+
+    .project-d-details {
+        flex-flow: column;
+        gap: 1rem;
+    }
+
+    .footer-links {
+        /* margin-inline: 0.5rem; */
+        display: grid;
+    }
+
+    .footer-links>h2 {
+        grid-row: 1;
+        grid-column: 1/5;
+
+        justify-self: center;
+    }
+
+    .footer-links>img {
+        grid-row: 2;
+    }
+
 }
 
 @media only screen and (min-width: 2000px) {
